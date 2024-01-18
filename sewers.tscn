@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl803hyqi7kjc"]
+
+[ext_resource type="Texture2D" uid="uid://tgtuyh6kv0qy" path="res://IMG_1830.jpeg" id="1_5nt1t"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mgj5x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5nt1t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Sewers" type="Node2D"]
+
+[node name="Player" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = SubResource("SpriteFrames_mgj5x")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]

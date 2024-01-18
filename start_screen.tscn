@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://xrhxyk5dcyak"]
+
+[node name="StartScreen" type="Node2D"]
+
+[node name="Hero" type="RichTextLabel" parent="."]
+offset_left = 196.0
+offset_top = 147.0
+offset_right = 340.0
+offset_bottom = 187.0
+theme_override_colors/default_color = Color(0.211765, 0.403922, 0.988235, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "Muniment"
+
+[node name="Description" type="RichTextLabel" parent="."]
+offset_left = 144.0
+offset_top = 187.0
+offset_right = 395.0
+offset_bottom = 214.0
+theme_override_colors/default_color = Color(0, 0.568627, 0.87451, 1)
+theme_override_font_sizes/normal_font_size = 14
+text = "A Downtown Oakland Simulator
+"
